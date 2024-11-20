@@ -8,6 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Layout from "./components/dashboard/Layout";
 import Inventory from "./pages/Inventory";
 import toast, { Toaster } from "react-hot-toast";
+import Modal from "./pages/Modal";
 function Logout() {
   localStorage.clear();
   return <Navigate to="/login" />;
@@ -33,6 +34,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/register" element={<RegisterAndLogout />} />
+          <Route path='/modal' element={<Modal/> }/>
           <Route path="/notfound">
             <Route path="*" element={<NotFound />} />
           </Route>

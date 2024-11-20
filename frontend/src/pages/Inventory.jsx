@@ -2,11 +2,12 @@
 
 export default function Products() {
 
-	return(
-
-        <div> Inventory page</div>
-
-    )
+	return (
+        <div>
+          
+      <div> Inventory page</div>
+    </div>
+  );
      
 
 }
